@@ -14,6 +14,7 @@ Add this to your `Cargo.toml`:
 ```toml
 [dependencies]
 num-bigint = "0.3"
+#num-bigint = { version = "0.3", default-features = false, features = ["libm"] } # for no_std
 ```
 
 ## Features

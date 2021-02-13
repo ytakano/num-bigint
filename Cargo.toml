@@ -68,6 +68,7 @@ default-features = false
 [features]
 default = ["std"]
 std = ["num-integer/std", "num-traits/std"]
+libm = ["num-traits/libm"]
 
 [build-dependencies]
 autocfg = "1"
