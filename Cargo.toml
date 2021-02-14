@@ -36,7 +36,8 @@ name = "shootout-pidigits"
 [dependencies]
 
 [dependencies.num-integer]
-version = "0.1.42"
+#version = "0.1.42"
+git = "https://github.com/ytakano/num-integer.git"
 default-features = false
 features = ["i128"]
 
@@ -68,7 +69,7 @@ default-features = false
 [features]
 default = ["std"]
 std = ["num-integer/std", "num-traits/std"]
-libm = ["num-traits/libm"]
+libm = ["num-traits/libm", "num-integer/libm"]
 
 [build-dependencies]
 autocfg = "1"
